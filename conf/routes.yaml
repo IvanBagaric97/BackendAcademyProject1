@@ -1,0 +1,96 @@
+###########
+# visitor #
+###########
+
+index:
+  url: ""
+  controller: IndexController
+  action: doAction
+
+register:
+  url: register
+  controller: RegisterController
+  action: doAction
+
+registered:
+  url: registered
+  controller: ProcessRegistrationController
+  action: doAction
+
+home:
+  url: home
+  controller: HomeController
+  action: doAction
+
+logout:
+  url: logout
+  controller: LogoutController
+  action: doAction
+
+account:
+  url: account
+  controller: AccountController
+  action: doAction
+
+create:
+  url: create
+  controller: CreateController
+  action: doAction
+
+created:
+  url: created
+  controller: ProcessCreateController
+  action: doAction
+
+edit:
+  url: account/edit
+  controller: AccountEditController
+  action: doAction
+
+save_edit:
+  url: account/save_edit
+  controller: SaveEditController
+  action: doAction
+
+view:
+  url: view
+  controller: ViewController
+  action: doAction
+
+solve:
+  url: solve/<quiz_id>
+  controller: SolveController
+  action: doAction
+  regexs:
+    quiz_id: "\\d+"
+
+evaluate:
+  url: evaluate/<quiz_id>
+  controller: EvaluateController
+  action: doAction
+  regexs:
+    quiz_id: "\\d+"
+
+comment:
+  url: comment/<quiz_id>
+  controller: CommentController
+  action: doAction
+  regexs:
+    quiz_id: "\\d+"
+
+comments:
+  url: comments/<quiz_id>
+  controller: ViewCommentController
+  action: doAction
+  regexs:
+    quiz_id: "\\d+"
+
+challenge:
+  url: challenge
+  controller: ChallengeController
+  action: doAction
+
+stats:
+  url: stats
+  controller: StatsController
+  action: doAction
